@@ -4,8 +4,11 @@
   display: flex;
   justify-content: center;
   padding: 56px 50px 43px 50px;
-  margin: 0 100px 50px 100px;
   background-color: $color-grey;
   height: 829px;
   border-radius: 25px;
+  width: 100%;
+  max-width: 1240px;
+  margin:50px auto;
+
 }

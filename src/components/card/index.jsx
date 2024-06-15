@@ -1,8 +1,12 @@
-export default function Card () {
+import './style.scss'
+
+export default function Card ({ title } ) {
   return (
-    <div>
-      <img src="" alt="" />
-      <h2>Titre de la location</h2>
+    <div className={ 'card' }> 
+      <div className={ 'card__figure' }>
+        <img src="" alt="" />
+      </div>
+      <h2 className={ 'card__title' }>{title}</h2>
     </div>
   )
 }

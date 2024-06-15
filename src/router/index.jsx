@@ -1,8 +1,7 @@
-import React from 'react';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/home/index.jsx";
 import About from "../pages/about/index.jsx";
-import {routes} from "./routes.js";
+import { routes } from "./routes.js";
 
 export default function Router() {
     return <BrowserRouter>

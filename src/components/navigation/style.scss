@@ -1,26 +1,28 @@
 @import "../../assets/scss/variables";
 
 .navigation {
-  width: 90%;
-  margin: 30px 100px 45px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  
+  .container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 45px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__list {
 
     padding: 0;
-
     display: flex;
     align-items: center;
-    justify-content: center;
-
     list-style: none;
   }
 
   &__item {
-    margin: 0 57px;
-    font-family: Montserrat, sans-serif;
+    margin: 0 0 0 57px;
     font-size: 24px;
     font-style: normal;
   }
