@@ -1,8 +1,5 @@
-import React from 'react';
 import logofooter from '../../assets/images/logofooter.png'
 import "./style.scss"
-
-import {routes} from "../../router/routes.js";
 
 export default function Footer() {
     return (

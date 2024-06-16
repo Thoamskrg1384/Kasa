@@ -2,7 +2,8 @@
 
 .gallery__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 56px 50px 43px 50px;
   background-color: $color-grey;
   height: 829px;
@@ -10,5 +11,5 @@
   width: 100%;
   max-width: 1240px;
   margin:50px auto;
-
+  overflow: hidden;
 }
