@@ -1,5 +1,6 @@
 export const routes = {
   home: "/",
   about: "/about",
-  flat: "/flat",
+  flat: (id = ":id") => `/flat/${id}`,
+  error: "*",
 };

@@ -2,20 +2,6 @@ import   { useState } from 'react';
 import './style.scss';
 import arrow_top from '../../assets/images/arrow_top.svg'
 
-// Méthode de structure conseillée
-// src / components
-
-// partials 
-    // navbar
-    // footer
-    // ...
-// composants
-  // card
-  // title
-  // description
-
-// css (javascript)
-
 export default function Dropdown ({ title, children }) {
   
     const [isOpen, setIsOpen] = useState(false);

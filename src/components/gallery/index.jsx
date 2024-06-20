@@ -1,8 +1,8 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import Card from "../card"
 import './style.scss'
 
-export default function Gallery ({title, cover}) {
+export default function Gallery () {
 
   const [data, setData] = useState([])
 
@@ -18,11 +18,12 @@ console.log(data);
 
   return (
     <div className="gallery__container">
-        {data.map(flat => (
+        { data.map(flat => (
           <Card
-            key= {flat.id}
-            title={flat.title}
-            cover={flat.cover}
+            key={ flat.id }
+            id={ flat.id }
+            title={ flat.title }
+            cover={ flat.cover }
             />
         ))}
     </div>

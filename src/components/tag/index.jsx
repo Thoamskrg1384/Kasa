@@ -1,9 +1,11 @@
 import './style.scss'
 
-export default function tag() {
+export default function Tag(tag) {
   return (
-   <div>
-    tag
-   </div>
+   
+    <div className= { 'tag__container' }>
+    
+    </div>
+   
   )
 }

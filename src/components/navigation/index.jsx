@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import {routes} from "../../router/routes.js";
 import logokasa from "../../assets/images/logokasa.svg"
 import "./style.scss"
@@ -13,10 +13,10 @@ export default function Navigation() {
                 </Link>
                 <ul className={'navigation__list'}>
                     <li className={'navigation__item'}>
-                        <Link to={routes.home} className={'navigation__link'}>Accueil</Link>
+                        <NavLink to={routes.home} className={ ({isActive}) => `navigation__link ${isActive ? 'active' : ''}`}>Accueil</NavLink>
                     </li>
                     <li className={'navigation__item'}>
-                        <Link to={routes.about} className={'navigation__link'}>À propos</Link>
+                        <NavLink to={routes.about} className={ ({isActive}) => `navigation__link ${isActive ? 'active' : ''}`}>À propos</NavLink>
                     </li>
                 </ul>
             </div>
