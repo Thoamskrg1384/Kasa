@@ -2,12 +2,15 @@
 
 .footer {
   padding: 66px 0 29px 0;
-  background-color: $color-black;
-  color: #FFF;
-  text-align: center;
+
+  width: 100%;
+
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
-  width: 100%;
+  text-align: center;
+
+  background-color: $color-black;
+  color: #FFF;
 }

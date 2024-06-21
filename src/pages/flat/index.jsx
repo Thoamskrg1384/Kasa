@@ -57,7 +57,8 @@ export default function Flat() {
         location={flat.location}
         description={flat.description}
         equipments={flat.equipments}
-        tags={flat.tags}/>
+        tags={flat.tags}
+        rating={flat.rating}/>
     </LayoutDefault>
   )
 }

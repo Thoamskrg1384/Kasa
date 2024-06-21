@@ -1,0 +1,9 @@
+@import '../../../assets/scss/variables';
+
+.star {
+  color: $color-grey;
+  
+  &--lightOn {
+    color: $color-red;
+  }
+}
