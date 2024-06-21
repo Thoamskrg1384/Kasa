@@ -6,12 +6,36 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
   }
   .dropdown__container {
     max-width: 552px;
-    margin: 50px 0;
+    margin: 24px 0 50px 0;
   }
+  ul {
+    list-style: none;
+  }
+}
+
+.flat__title {
+  color: $color-red;
+  font-size: 36px;
+  font-weight: 500;
+
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.flat__location {
+  font-size: 18px;
+  font-weight: 500;
+
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
 }

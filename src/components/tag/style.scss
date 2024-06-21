@@ -1,0 +1,27 @@
+@import "../../assets/scss/variables";
+
+.tags__container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags__item {
+  margin: 20px 10px 0 0;
+  padding: 0 30px;
+
+  height: 25px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  background: $color-red;
+  border-radius: 10px;
+}

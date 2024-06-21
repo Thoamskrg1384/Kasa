@@ -1,11 +1,11 @@
-import './style.scss'
+import './style.scss';
 
-export default function Tag(tag) {
+export default function Tag({ tags }) {
   return (
-   
-    <div className= { 'tag__container' }>
-    
+    <div className='tags__container'>
+      {tags.map((tag, id) => (
+        <p className='tags__item' key={id}>{tag}</p>
+      ))}
     </div>
-   
-  )
+  );
 }

@@ -52,7 +52,12 @@ export default function Flat() {
   return (
     <LayoutDefault>
       {flat.pictures && <Slider pictures={flat.pictures} />}
-      <Informations />
+      <Informations 
+        title={flat.title}
+        location={flat.location}
+        description={flat.description}
+        equipments={flat.equipments}
+        tags={flat.tags}/>
     </LayoutDefault>
   )
 }
