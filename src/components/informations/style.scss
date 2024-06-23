@@ -2,21 +2,35 @@
 
 .flat__informations {
 
-  .dropdown__informations__container{
+  &--header {
     margin: 0 auto;
 
-    width: 100%;
-    max-width: 1240px;
+    max-width: 86.11%;
 
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+  }
+
+  .dropdown__informations__container{
+    margin: 0 auto;
+
+    width: 90.8%;
+    
+    display: flex;
+    justify-content: space-between;
   }
 
   .dropdown__container {
-    margin: 24px 0 50px 0;
+    margin: 24px auto 50px auto;
+    width: 44.7%;
+  }
 
-    max-width: 552px;
+  .dropdown__button--background {
+    max-width: 100%;
+  }
+
+  .dropdown__content {
+    max-width: 100%;
   }
 
   ul {
@@ -27,8 +41,7 @@
 .flat__title {
   margin: 0 auto;
 
-  width: 100%;
-  max-width: 1240px;
+  max-width: 100%;
 
   font-size: 36px;
   font-weight: 500;
@@ -40,8 +53,7 @@
 .flat__location {
   margin: 0 auto;
   
-  width: 100%;
-  max-width: 1240px;
+  max-width: 100%;
   
   font-size: 18px;
   font-weight: 500;

@@ -1,7 +1,7 @@
 
 import { Link, NavLink} from "react-router-dom";
 import {routes} from "../../router/routes.js";
-import logokasa from "../../assets/images/logokasa.svg"
+import logokasa from "../../assets/images/logokasa_desktop.svg"
 import "./style.scss"
 
 export default function Navigation() {

@@ -1,0 +1,33 @@
+@import '../../assets/scss/variables';
+
+.host__container {
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 1240px;
+
+  display: flex;
+  justify-content: flex-end;
+
+  img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    
+  }
+}
+
+.host__name {
+  margin: 0 10px 0 0;
+  width: 93px;
+  
+  font-size: 18px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  
+  text-align: right;
+  color: $color-red;
+
+}

@@ -23,22 +23,30 @@ export default function Slider({ pictures }) {
     
   }
 
-
   return (
     <div className={ 'slider' }>
 
-    <div className='buttons__slide'>
-      <button className='button__slide--previous' onClick={onPrevious}>
-        <img src={arrow_left} alt="photo précédente" />
-      </button>
-      <button className='button__slide--next' onClick={onNext}>
-        <img src={arrow_right} alt="photo suivante" />
-      </button>
-    </div>
+      {pictures.length > 1 && (
+        <div className='buttons__slide'>
+          <button className='button__slide--previous' onClick={onPrevious}>
+            <img src={arrow_left} alt="photo précédente" />
+          </button>
+          <button className='button__slide--next' onClick={onNext}>
+            <img src={arrow_right} alt="photo suivante" />
+          </button>
+        </div>
+
+        )}
+
 
         <Slide picture={ pictures[currentSlide] } alt={`Image n°${currentSlide + 1}`} />
 
-        <span className='slide__indicator'>{currentSlide + 1}/{pictures.length}</span>
+        {pictures.length > 1 && (
+          <span className='slide__indicator'>
+            {currentSlide + 1}/{pictures.length}
+          </span>
+        )}
+        
     </div>
   )
 }

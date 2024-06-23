@@ -1,4 +1,4 @@
-import LayoutDefault from "../../layout/default/index.jsx";
+import LayoutDefault from "../../layout/default";
 import Banner from "../../components/banner"
 import Gallery from "../../components/gallery"
 import cliffs from "../../assets/images/cliffs.png"

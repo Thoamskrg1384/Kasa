@@ -14,3 +14,17 @@
   background-color: $color-black;
   color: #FFF;
 }
+
+@media (max-width: 800px) {
+  .footer p {
+    margin: 10px auto;
+
+    width: 133px;
+    height: 46px;
+
+    line-height: 17px;
+    font-size: 12px;
+    text-align: center;
+    
+  }
+}

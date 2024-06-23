@@ -1,30 +1,36 @@
 @import "../../assets/scss/variables";
 
 .error {
-  width: 100%;
   margin: 139px auto;
+
+  width: 100%;
+  max-width: 86.11%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   &--code {
-    display: flex;
     font-size: 288px;
     font-weight: 700;
+
     color: $color-red;
   } 
 
   &--pattern {
+    margin: 138px auto;
+
     font-size: 36px;
     font-weight: 500;
+
     color: $color-red;
-    margin: 138px auto;
   }
 }
 
 .back__home {
-  color: $color-black;
   font-size: 18px;
   font-weight: 500;
+  
+  color: $color-black;
 }

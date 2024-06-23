@@ -3,15 +3,16 @@
 .tags__container {
   width: 100%;
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 100%;
   display: flex;
-  flex-wrap: wrap;
+
 }
 
 .tags__item {
   margin: 20px 10px 0 0;
   padding: 0 30px;
 
+  width: 115px;
   height: 25px;
 
   font-size: 14px;

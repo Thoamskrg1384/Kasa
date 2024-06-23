@@ -1,4 +1,4 @@
-import LayoutDefault from "../../layout/default/index.jsx";
+import LayoutDefault from "../../layout/default";
 import Banner from "../../components/banner";
 import Dropdown from "../../components/dropdown";
 import mountains from "../../assets/images/mountains.png"
@@ -7,7 +7,7 @@ import "../../components/dropdown/style.scss"
 export default function About() {
     return (
     <LayoutDefault>
-        <Banner image={mountains}/>
+        <Banner title={"Votre bien-être est notre priorité"}image={mountains}/>
         <Dropdown title={"Fiabilité"}>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</Dropdown>
         <Dropdown title={"Respect"}>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</Dropdown>
         <Dropdown title={"Service"}>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</Dropdown>

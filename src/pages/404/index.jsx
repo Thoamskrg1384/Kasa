@@ -1,17 +1,11 @@
 import LayoutDefault from "../../layout/default";
-import { Link } from "react-router-dom";
-import { routes } from "../../router/routes.js";
-import './style.scss'
+import CodeError from "../../components/404";
+
 
 export default function Error () {
   return (
     <LayoutDefault>
-    <div className={ 'error' }>
-      <p className={ 'error--code' }>404</p>
-      <p className= { 'error--pattern' }>Oups! La page que vous demandez n&apos;existe pas.</p>
-      <Link to={ routes.home } className={ 'back__home' }>Retourner sur la page d&apos;accueil</Link>
-    </div>
-
+      <CodeError />
     </LayoutDefault>
   )
 }

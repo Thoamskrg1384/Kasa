@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../pages/home/index.jsx";
-import About from "../pages/about/index.jsx";
-import Flat from "../pages/flat/index.jsx";
-import Error from "../pages/404/index.jsx";
+import Home from "../pages/home";
+import About from "../pages/about";
+import Flat from "../pages/flat";
+import Error from "../pages/404";
 import { routes } from "./routes.js";
 
 export default function Router() {
