@@ -1,9 +1,24 @@
 @import '../../../assets/scss/variables';
 
 .star {
+  padding:  0 5px;
+
   color: $color-grey;
   
   &--lightOn {
+    padding: 0 5px;
+
     color: $color-red;
   }
 }
+
+@media (max-width: 800px) {
+  .star {
+    font-size: smaller;
+
+    &--lightOn {
+      font-size: smaller;
+    }
+  }
+}
+

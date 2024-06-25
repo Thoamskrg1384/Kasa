@@ -53,13 +53,14 @@ export default function Flat() {
     <LayoutDefault>
       {flat.pictures && <Slider pictures={flat.pictures} />}
       <Informations 
+      
         title={flat.title}
         location={flat.location}
         description={flat.description}
         equipments={flat.equipments}
         tags={flat.tags}
         rating={flat.rating}
-        host={flat.host} />
+        host={flat.host}/>
     </LayoutDefault>
   )
 }

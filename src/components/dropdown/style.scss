@@ -2,18 +2,31 @@
 
 .dropdown__container {
   margin: 38px auto;
+  padding: 0 20px;
 
-  max-width: 82.5%;
+  max-width: 1063px;
+
+  cursor: pointer;
 }
+
 
 .dropdown__button {
   cursor: pointer;
+
   border-style: none;
 
   color: white;
   background-color: $color-red;
 
   transition: transform 0.3s ease;
+
+  svg {
+    width: 32px;
+    * {
+      fill: white
+    }
+  }
+
 
   &.rotated {
       transform: rotate(180deg);
@@ -37,22 +50,64 @@
     margin: 0 auto;
     padding: 10px 20px 10px 15px;
 
-    max-width: 86.11%;
+    max-width: 1023px;
 
     background-color: $color-red;
     border-radius: 5px;
+
+    z-index: 150;
   }
 }
 
 .dropdown__content {
   margin: 0 auto;
-  padding: 25px 28px 20px 20px;
 
-  max-width: 86.11%;
+  max-width: 1023px;
 
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+
+  overflow: hidden;
   
   background-color: $color-grey;
+  z-index: 100;
+
+  animation: linear .5s slideIn forwards;
+
+  p {
+    padding: 25px 28px 20px 20px;
+  }
+
+  &.animate {
+    animation: linear .15s slideOut forwards;
+  }
+}
+
+@keyframes slideIn {
+  0%{
+    opacity: 0;
+    max-height: 0;
+    margin-top: -20px;
+  }
+
+  100%{
+    opacity: 1;
+    max-height: 1000px;
+    margin-top: 0px;
+  }
+}
+
+@keyframes slideOut {
+  0%{
+    opacity: 1;
+    max-height: 1000px;
+    margin-top: 0px;
+  }
+
+  100%{
+    opacity: 0;
+    max-height: 0;
+    margin-top: -20px;
+  }
 }

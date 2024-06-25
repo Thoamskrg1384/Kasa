@@ -1,10 +1,13 @@
 @import "../../assets/scss/variables";
+.error__container {
+  padding: 0 20px;
+}
 
 .error {
   margin: 139px auto;
 
   width: 100%;
-  max-width: 86.11%;
+  max-width: 1240px;
 
   display: flex;
   justify-content: center;
@@ -12,17 +15,20 @@
   flex-direction: column;
 
   &--code {
+    max-width: 100%;
+
     font-size: 288px;
     font-weight: 700;
+
 
     color: $color-red;
   } 
 
   &--pattern {
     margin: 138px auto;
-
     font-size: 36px;
     font-weight: 500;
+    text-align: center;
 
     color: $color-red;
   }
@@ -33,4 +39,36 @@
   font-weight: 500;
   
   color: $color-black;
+}
+
+@media (max-width: 800px) {
+  .error {
+    margin: 113px auto;
+
+    &--code {
+      max-width: 100%;
+  
+      font-size: 96px;
+      font-weight: 700;
+    } 
+
+    &--pattern {
+      margin: 113px auto;
+
+      width: 260px;
+
+      font-size: 18px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .back__home {
+    font-size: 14px;
+    font-weight: 500;
+    
+    color: $color-black;
+  }
+  
 }

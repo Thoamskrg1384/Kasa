@@ -31,3 +31,23 @@
   color: $color-red;
 
 }
+
+@media (max-width: 800px) {
+
+  .host__container {
+    display: flex;
+    align-items: flex-end;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .host__name {
+    display: flex;
+    justify-content: flex-end;
+    width: 33px;
+
+    font-size: 12px;
+  }
+}

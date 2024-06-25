@@ -5,10 +5,10 @@
   
   .container {
     margin: 0 auto;
-    padding: 45px 0 50px 0;
+    padding: 45px 20px 50px 20px;
 
     width: 100%;
-    max-width: 86.11%;
+    max-width: 1240px;
 
     display: flex;
     align-items: center;
@@ -48,13 +48,17 @@
 @media (max-width: 800px) {
   .navigation__image
   img {
-    width: 145px;
-    height: 46.88px;
+    width: 125px;
+
   }
 
   .navigation__item {
     margin: 0 0 0 26px;
 
     font-size: 12px;
+  }
+
+  .container {
+    padding: 45px 0 27px 0;
   }
 }
