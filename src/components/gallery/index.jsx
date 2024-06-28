@@ -14,7 +14,7 @@ export default function Gallery () {
         })
   }, [])
 
-console.log(data);
+// console.log(data);
 
   return (
     <div className='gallery__padding'>
